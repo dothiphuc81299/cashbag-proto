@@ -1,4 +1,4 @@
-module cashbag-proto
+module github.com/lqhoang99/cashbag-proto
 
 go 1.14
 
