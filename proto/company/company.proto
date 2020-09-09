@@ -1,0 +1,41 @@
+syntax = "proto3";
+
+package company;
+
+option go_package="/models/company;companypb";
+
+message CompanyBrief {
+    string id = 1;
+    string name = 2;
+    float CashbackPercent = 3;
+    int64 totalTransaction = 4;
+    int64 totalRevenue = 5;  
+}
+
+message GetCompanyBriefByIDRequest {
+    string id = 1 ;
+}
+
+message GetCompanyBriefByIDResponse {
+    CompanyBrief companyBrief = 1;
+}
+
+message BranchBrief {
+    string id = 1;
+    string name = 2;
+    int64 totalTransaction = 3;
+    int64 totalRevenue = 4;  
+}
+
+message GetBranchBriefByIDRequest {
+    string id = 1 ;
+}
+
+message GetBranchBriefByIDResponse {
+    BranchBrief branchBrief = 1;
+}
+
+service CompanyService {
+    rpc GetCompanyBriefByID(GetCompanyBriefByIDRequest) returns (GetCompanyBriefByIDResponse){};
+    rpc GetBranchBriefByID(GetBranchBriefByIDRequest) returns (GetBranchBriefByIDResponse){};
+}
