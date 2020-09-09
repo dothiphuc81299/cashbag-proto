@@ -8,7 +8,7 @@ message UserBrief {
     string id = 1;
     string name = 2;
     int64 totalTransaction = 3;
-    double totalRevenue = 4;  
+    double totalCommission = 4;  
 }
 
 message GetUserBriefByIDRequest {
