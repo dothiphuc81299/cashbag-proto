@@ -11,9 +11,9 @@ message TransactionDetail {
     string company = 2;
     string branch = 3;
     string user = 4;
-    float amount = 5;
-    float commission =6;
-    float companyCashbackPercent = 7;
+    double amount = 5;
+    double commission =6;
+    double companyCashbackPercent = 7;
     google.protobuf.Timestamp createdAt = 8;  
 }
 

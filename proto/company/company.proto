@@ -7,9 +7,9 @@ option go_package="/models/company;companypb";
 message CompanyBrief {
     string id = 1;
     string name = 2;
-    float CashbackPercent = 3;
+    double CashbackPercent = 3;
     int64 totalTransaction = 4;
-    int64 totalRevenue = 5;  
+    double totalRevenue = 5;  
 }
 
 message GetCompanyBriefByIDRequest {
@@ -24,7 +24,7 @@ message BranchBrief {
     string id = 1;
     string name = 2;
     int64 totalTransaction = 3;
-    int64 totalRevenue = 4;  
+    double totalRevenue = 4;  
 }
 
 message GetBranchBriefByIDRequest {
@@ -38,7 +38,7 @@ message GetBranchBriefByIDResponse {
 message UpdateCompanyStatsByIDRequest {
     string id = 1;
     int64 totalTransaction = 2;               
-    float totalRevenue = 3;
+    double totalRevenue = 3;
 }
 
 message UpdateCompanyStatsByIDResponse {
@@ -48,7 +48,7 @@ message UpdateCompanyStatsByIDResponse {
 message UpdateBranchStatsByIDRequest {
     string id = 1;
     int64 totalTransaction = 2;               
-    float totalRevenue = 3;
+    double totalRevenue = 3;
 }
 
 message UpdateBranchStatsByIDResponse {
