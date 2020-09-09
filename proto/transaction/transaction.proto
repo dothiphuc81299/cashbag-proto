@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package transaction;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package="/models/transaction;transactionpb";
+
+message TransactionDetail {
+    string id = 1;
+    string company = 2;
+    string branch = 3;
+    string user = 4;
+    float amount = 5;
+    float commission =6;
+    float companyCashbackPercent = 7;
+    google.protobuf.Timestamp createdAt = 8;  
+}
+
+message GetTransactionDetailByUserIDRequest {
+    string id = 1 ;
+}
+
+message GetTransactionDetailByUserIDResponse {
+    TransactionDetail transactionDetail = 1;
+}
+
+message GetTransactionDetailByCompanyIDRequest {
+    string id = 1 ;
+}
+
+message GetTransactionDetailByCompanyIDResponse {
+    TransactionDetail transactionDetail = 1;
+}
+
+service TransactionService {
+    rpc GetTransactionDetailByUserID(GetTransactionDetailByUserIDRequest) returns (GetTransactionDetailByUserIDResponse){};
+    rpc GetTransactionDetailByCompanyID(GetTransactionDetailByCompanyIDRequest) returns (GetTransactionDetailByCompanyIDResponse){};
+}
