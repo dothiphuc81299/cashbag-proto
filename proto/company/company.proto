@@ -35,7 +35,29 @@ message GetBranchBriefByIDResponse {
     BranchBrief branchBrief = 1;
 }
 
+message UpdateCompanyStatsByIDRequest {
+    string id = 1;
+    int64 totalTransaction = 2;               
+    float totalRevenue = 3;
+}
+
+message UpdateCompanyStatsByIDResponse {
+   
+}
+
+message UpdateBranchStatsByIDRequest {
+    string id = 1;
+    int64 totalTransaction = 2;               
+    float totalRevenue = 3;
+}
+
+message UpdateBranchStatsByIDResponse {
+   
+}
+
 service CompanyService {
     rpc GetCompanyBriefByID(GetCompanyBriefByIDRequest) returns (GetCompanyBriefByIDResponse){};
     rpc GetBranchBriefByID(GetBranchBriefByIDRequest) returns (GetBranchBriefByIDResponse){};
+    rpc UpdateCompanyStatsByID(UpdateCompanyStatsByIDRequest) returns (UpdateCompanyStatsByIDResponse){};
+    rpc UpdateBranchStatsByID(UpdateBranchStatsByIDRequest) returns (UpdateBranchStatsByIDResponse){};
 }

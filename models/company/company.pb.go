@@ -367,6 +367,208 @@ func (x *GetBranchBriefByIDResponse) GetBranchBrief() *BranchBrief {
 	return nil
 }
 
+type UpdateCompanyStatsByIDRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Id               string  `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
+	TotalTransaction int64   `protobuf:"varint,2,opt,name=totalTransaction,proto3" json:"totalTransaction,omitempty"`
+	TotalRevenue     float32 `protobuf:"fixed32,3,opt,name=totalRevenue,proto3" json:"totalRevenue,omitempty"`
+}
+
+func (x *UpdateCompanyStatsByIDRequest) Reset() {
+	*x = UpdateCompanyStatsByIDRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_proto_company_company_proto_msgTypes[6]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *UpdateCompanyStatsByIDRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*UpdateCompanyStatsByIDRequest) ProtoMessage() {}
+
+func (x *UpdateCompanyStatsByIDRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_company_company_proto_msgTypes[6]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use UpdateCompanyStatsByIDRequest.ProtoReflect.Descriptor instead.
+func (*UpdateCompanyStatsByIDRequest) Descriptor() ([]byte, []int) {
+	return file_proto_company_company_proto_rawDescGZIP(), []int{6}
+}
+
+func (x *UpdateCompanyStatsByIDRequest) GetId() string {
+	if x != nil {
+		return x.Id
+	}
+	return ""
+}
+
+func (x *UpdateCompanyStatsByIDRequest) GetTotalTransaction() int64 {
+	if x != nil {
+		return x.TotalTransaction
+	}
+	return 0
+}
+
+func (x *UpdateCompanyStatsByIDRequest) GetTotalRevenue() float32 {
+	if x != nil {
+		return x.TotalRevenue
+	}
+	return 0
+}
+
+type UpdateCompanyStatsByIDResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *UpdateCompanyStatsByIDResponse) Reset() {
+	*x = UpdateCompanyStatsByIDResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_proto_company_company_proto_msgTypes[7]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *UpdateCompanyStatsByIDResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*UpdateCompanyStatsByIDResponse) ProtoMessage() {}
+
+func (x *UpdateCompanyStatsByIDResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_company_company_proto_msgTypes[7]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use UpdateCompanyStatsByIDResponse.ProtoReflect.Descriptor instead.
+func (*UpdateCompanyStatsByIDResponse) Descriptor() ([]byte, []int) {
+	return file_proto_company_company_proto_rawDescGZIP(), []int{7}
+}
+
+type UpdateBranchStatsByIDRequest struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+
+	Id               string  `protobuf:"bytes,1,opt,name=id,proto3" json:"id,omitempty"`
+	TotalTransaction int64   `protobuf:"varint,2,opt,name=totalTransaction,proto3" json:"totalTransaction,omitempty"`
+	TotalRevenue     float32 `protobuf:"fixed32,3,opt,name=totalRevenue,proto3" json:"totalRevenue,omitempty"`
+}
+
+func (x *UpdateBranchStatsByIDRequest) Reset() {
+	*x = UpdateBranchStatsByIDRequest{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_proto_company_company_proto_msgTypes[8]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *UpdateBranchStatsByIDRequest) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*UpdateBranchStatsByIDRequest) ProtoMessage() {}
+
+func (x *UpdateBranchStatsByIDRequest) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_company_company_proto_msgTypes[8]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use UpdateBranchStatsByIDRequest.ProtoReflect.Descriptor instead.
+func (*UpdateBranchStatsByIDRequest) Descriptor() ([]byte, []int) {
+	return file_proto_company_company_proto_rawDescGZIP(), []int{8}
+}
+
+func (x *UpdateBranchStatsByIDRequest) GetId() string {
+	if x != nil {
+		return x.Id
+	}
+	return ""
+}
+
+func (x *UpdateBranchStatsByIDRequest) GetTotalTransaction() int64 {
+	if x != nil {
+		return x.TotalTransaction
+	}
+	return 0
+}
+
+func (x *UpdateBranchStatsByIDRequest) GetTotalRevenue() float32 {
+	if x != nil {
+		return x.TotalRevenue
+	}
+	return 0
+}
+
+type UpdateBranchStatsByIDResponse struct {
+	state         protoimpl.MessageState
+	sizeCache     protoimpl.SizeCache
+	unknownFields protoimpl.UnknownFields
+}
+
+func (x *UpdateBranchStatsByIDResponse) Reset() {
+	*x = UpdateBranchStatsByIDResponse{}
+	if protoimpl.UnsafeEnabled {
+		mi := &file_proto_company_company_proto_msgTypes[9]
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		ms.StoreMessageInfo(mi)
+	}
+}
+
+func (x *UpdateBranchStatsByIDResponse) String() string {
+	return protoimpl.X.MessageStringOf(x)
+}
+
+func (*UpdateBranchStatsByIDResponse) ProtoMessage() {}
+
+func (x *UpdateBranchStatsByIDResponse) ProtoReflect() protoreflect.Message {
+	mi := &file_proto_company_company_proto_msgTypes[9]
+	if protoimpl.UnsafeEnabled && x != nil {
+		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
+		if ms.LoadMessageInfo() == nil {
+			ms.StoreMessageInfo(mi)
+		}
+		return ms
+	}
+	return mi.MessageOf(x)
+}
+
+// Deprecated: Use UpdateBranchStatsByIDResponse.ProtoReflect.Descriptor instead.
+func (*UpdateBranchStatsByIDResponse) Descriptor() ([]byte, []int) {
+	return file_proto_company_company_proto_rawDescGZIP(), []int{9}
+}
+
 var File_proto_company_company_proto protoreflect.FileDescriptor
 
 var file_proto_company_company_proto_rawDesc = []byte{
@@ -408,23 +610,56 @@ var file_proto_company_company_proto_rawDesc = []byte{
 	0x62, 0x72, 0x61, 0x6e, 0x63, 0x68, 0x42, 0x72, 0x69, 0x65, 0x66, 0x18, 0x01, 0x20, 0x01, 0x28,
 	0x0b, 0x32, 0x14, 0x2e, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x2e, 0x42, 0x72, 0x61, 0x6e,
 	0x63, 0x68, 0x42, 0x72, 0x69, 0x65, 0x66, 0x52, 0x0b, 0x62, 0x72, 0x61, 0x6e, 0x63, 0x68, 0x42,
-	0x72, 0x69, 0x65, 0x66, 0x32, 0xd5, 0x01, 0x0a, 0x0e, 0x43, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79,
-	0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x62, 0x0a, 0x13, 0x47, 0x65, 0x74, 0x43, 0x6f,
-	0x6d, 0x70, 0x61, 0x6e, 0x79, 0x42, 0x72, 0x69, 0x65, 0x66, 0x42, 0x79, 0x49, 0x44, 0x12, 0x23,
-	0x2e, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x2e, 0x47, 0x65, 0x74, 0x43, 0x6f, 0x6d, 0x70,
-	0x61, 0x6e, 0x79, 0x42, 0x72, 0x69, 0x65, 0x66, 0x42, 0x79, 0x49, 0x44, 0x52, 0x65, 0x71, 0x75,
-	0x65, 0x73, 0x74, 0x1a, 0x24, 0x2e, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x2e, 0x47, 0x65,
-	0x74, 0x43, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x42, 0x72, 0x69, 0x65, 0x66, 0x42, 0x79, 0x49,
-	0x44, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x5f, 0x0a, 0x12, 0x47,
-	0x65, 0x74, 0x42, 0x72, 0x61, 0x6e, 0x63, 0x68, 0x42, 0x72, 0x69, 0x65, 0x66, 0x42, 0x79, 0x49,
-	0x44, 0x12, 0x22, 0x2e, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x2e, 0x47, 0x65, 0x74, 0x42,
-	0x72, 0x61, 0x6e, 0x63, 0x68, 0x42, 0x72, 0x69, 0x65, 0x66, 0x42, 0x79, 0x49, 0x44, 0x52, 0x65,
-	0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x23, 0x2e, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x2e,
+	0x72, 0x69, 0x65, 0x66, 0x22, 0x7f, 0x0a, 0x1d, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x43, 0x6f,
+	0x6d, 0x70, 0x61, 0x6e, 0x79, 0x53, 0x74, 0x61, 0x74, 0x73, 0x42, 0x79, 0x49, 0x44, 0x52, 0x65,
+	0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x0e, 0x0a, 0x02, 0x69, 0x64, 0x18, 0x01, 0x20, 0x01, 0x28,
+	0x09, 0x52, 0x02, 0x69, 0x64, 0x12, 0x2a, 0x0a, 0x10, 0x74, 0x6f, 0x74, 0x61, 0x6c, 0x54, 0x72,
+	0x61, 0x6e, 0x73, 0x61, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x18, 0x02, 0x20, 0x01, 0x28, 0x03, 0x52,
+	0x10, 0x74, 0x6f, 0x74, 0x61, 0x6c, 0x54, 0x72, 0x61, 0x6e, 0x73, 0x61, 0x63, 0x74, 0x69, 0x6f,
+	0x6e, 0x12, 0x22, 0x0a, 0x0c, 0x74, 0x6f, 0x74, 0x61, 0x6c, 0x52, 0x65, 0x76, 0x65, 0x6e, 0x75,
+	0x65, 0x18, 0x03, 0x20, 0x01, 0x28, 0x02, 0x52, 0x0c, 0x74, 0x6f, 0x74, 0x61, 0x6c, 0x52, 0x65,
+	0x76, 0x65, 0x6e, 0x75, 0x65, 0x22, 0x20, 0x0a, 0x1e, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x43,
+	0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x53, 0x74, 0x61, 0x74, 0x73, 0x42, 0x79, 0x49, 0x44, 0x52,
+	0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x7e, 0x0a, 0x1c, 0x55, 0x70, 0x64, 0x61, 0x74,
+	0x65, 0x42, 0x72, 0x61, 0x6e, 0x63, 0x68, 0x53, 0x74, 0x61, 0x74, 0x73, 0x42, 0x79, 0x49, 0x44,
+	0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x12, 0x0e, 0x0a, 0x02, 0x69, 0x64, 0x18, 0x01, 0x20,
+	0x01, 0x28, 0x09, 0x52, 0x02, 0x69, 0x64, 0x12, 0x2a, 0x0a, 0x10, 0x74, 0x6f, 0x74, 0x61, 0x6c,
+	0x54, 0x72, 0x61, 0x6e, 0x73, 0x61, 0x63, 0x74, 0x69, 0x6f, 0x6e, 0x18, 0x02, 0x20, 0x01, 0x28,
+	0x03, 0x52, 0x10, 0x74, 0x6f, 0x74, 0x61, 0x6c, 0x54, 0x72, 0x61, 0x6e, 0x73, 0x61, 0x63, 0x74,
+	0x69, 0x6f, 0x6e, 0x12, 0x22, 0x0a, 0x0c, 0x74, 0x6f, 0x74, 0x61, 0x6c, 0x52, 0x65, 0x76, 0x65,
+	0x6e, 0x75, 0x65, 0x18, 0x03, 0x20, 0x01, 0x28, 0x02, 0x52, 0x0c, 0x74, 0x6f, 0x74, 0x61, 0x6c,
+	0x52, 0x65, 0x76, 0x65, 0x6e, 0x75, 0x65, 0x22, 0x1f, 0x0a, 0x1d, 0x55, 0x70, 0x64, 0x61, 0x74,
+	0x65, 0x42, 0x72, 0x61, 0x6e, 0x63, 0x68, 0x53, 0x74, 0x61, 0x74, 0x73, 0x42, 0x79, 0x49, 0x44,
+	0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x32, 0xac, 0x03, 0x0a, 0x0e, 0x43, 0x6f, 0x6d,
+	0x70, 0x61, 0x6e, 0x79, 0x53, 0x65, 0x72, 0x76, 0x69, 0x63, 0x65, 0x12, 0x62, 0x0a, 0x13, 0x47,
+	0x65, 0x74, 0x43, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x42, 0x72, 0x69, 0x65, 0x66, 0x42, 0x79,
+	0x49, 0x44, 0x12, 0x23, 0x2e, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x2e, 0x47, 0x65, 0x74,
+	0x43, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x42, 0x72, 0x69, 0x65, 0x66, 0x42, 0x79, 0x49, 0x44,
+	0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x24, 0x2e, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e,
+	0x79, 0x2e, 0x47, 0x65, 0x74, 0x43, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x42, 0x72, 0x69, 0x65,
+	0x66, 0x42, 0x79, 0x49, 0x44, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12,
+	0x5f, 0x0a, 0x12, 0x47, 0x65, 0x74, 0x42, 0x72, 0x61, 0x6e, 0x63, 0x68, 0x42, 0x72, 0x69, 0x65,
+	0x66, 0x42, 0x79, 0x49, 0x44, 0x12, 0x22, 0x2e, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x2e,
 	0x47, 0x65, 0x74, 0x42, 0x72, 0x61, 0x6e, 0x63, 0x68, 0x42, 0x72, 0x69, 0x65, 0x66, 0x42, 0x79,
-	0x49, 0x44, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x42, 0x1b, 0x5a, 0x19,
-	0x2f, 0x6d, 0x6f, 0x64, 0x65, 0x6c, 0x73, 0x2f, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x3b,
-	0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x70, 0x62, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f,
-	0x33,
+	0x49, 0x44, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x23, 0x2e, 0x63, 0x6f, 0x6d, 0x70,
+	0x61, 0x6e, 0x79, 0x2e, 0x47, 0x65, 0x74, 0x42, 0x72, 0x61, 0x6e, 0x63, 0x68, 0x42, 0x72, 0x69,
+	0x65, 0x66, 0x42, 0x79, 0x49, 0x44, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00,
+	0x12, 0x6b, 0x0a, 0x16, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x43, 0x6f, 0x6d, 0x70, 0x61, 0x6e,
+	0x79, 0x53, 0x74, 0x61, 0x74, 0x73, 0x42, 0x79, 0x49, 0x44, 0x12, 0x26, 0x2e, 0x63, 0x6f, 0x6d,
+	0x70, 0x61, 0x6e, 0x79, 0x2e, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x43, 0x6f, 0x6d, 0x70, 0x61,
+	0x6e, 0x79, 0x53, 0x74, 0x61, 0x74, 0x73, 0x42, 0x79, 0x49, 0x44, 0x52, 0x65, 0x71, 0x75, 0x65,
+	0x73, 0x74, 0x1a, 0x27, 0x2e, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x2e, 0x55, 0x70, 0x64,
+	0x61, 0x74, 0x65, 0x43, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x53, 0x74, 0x61, 0x74, 0x73, 0x42,
+	0x79, 0x49, 0x44, 0x52, 0x65, 0x73, 0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x12, 0x68, 0x0a,
+	0x15, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x42, 0x72, 0x61, 0x6e, 0x63, 0x68, 0x53, 0x74, 0x61,
+	0x74, 0x73, 0x42, 0x79, 0x49, 0x44, 0x12, 0x25, 0x2e, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79,
+	0x2e, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x42, 0x72, 0x61, 0x6e, 0x63, 0x68, 0x53, 0x74, 0x61,
+	0x74, 0x73, 0x42, 0x79, 0x49, 0x44, 0x52, 0x65, 0x71, 0x75, 0x65, 0x73, 0x74, 0x1a, 0x26, 0x2e,
+	0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x2e, 0x55, 0x70, 0x64, 0x61, 0x74, 0x65, 0x42, 0x72,
+	0x61, 0x6e, 0x63, 0x68, 0x53, 0x74, 0x61, 0x74, 0x73, 0x42, 0x79, 0x49, 0x44, 0x52, 0x65, 0x73,
+	0x70, 0x6f, 0x6e, 0x73, 0x65, 0x22, 0x00, 0x42, 0x1b, 0x5a, 0x19, 0x2f, 0x6d, 0x6f, 0x64, 0x65,
+	0x6c, 0x73, 0x2f, 0x63, 0x6f, 0x6d, 0x70, 0x61, 0x6e, 0x79, 0x3b, 0x63, 0x6f, 0x6d, 0x70, 0x61,
+	0x6e, 0x79, 0x70, 0x62, 0x62, 0x06, 0x70, 0x72, 0x6f, 0x74, 0x6f, 0x33,
 }
 
 var (
@@ -439,24 +674,32 @@ func file_proto_company_company_proto_rawDescGZIP() []byte {
 	return file_proto_company_company_proto_rawDescData
 }
 
-var file_proto_company_company_proto_msgTypes = make([]protoimpl.MessageInfo, 6)
+var file_proto_company_company_proto_msgTypes = make([]protoimpl.MessageInfo, 10)
 var file_proto_company_company_proto_goTypes = []interface{}{
-	(*CompanyBrief)(nil),                // 0: company.CompanyBrief
-	(*GetCompanyBriefByIDRequest)(nil),  // 1: company.GetCompanyBriefByIDRequest
-	(*GetCompanyBriefByIDResponse)(nil), // 2: company.GetCompanyBriefByIDResponse
-	(*BranchBrief)(nil),                 // 3: company.BranchBrief
-	(*GetBranchBriefByIDRequest)(nil),   // 4: company.GetBranchBriefByIDRequest
-	(*GetBranchBriefByIDResponse)(nil),  // 5: company.GetBranchBriefByIDResponse
+	(*CompanyBrief)(nil),                   // 0: company.CompanyBrief
+	(*GetCompanyBriefByIDRequest)(nil),     // 1: company.GetCompanyBriefByIDRequest
+	(*GetCompanyBriefByIDResponse)(nil),    // 2: company.GetCompanyBriefByIDResponse
+	(*BranchBrief)(nil),                    // 3: company.BranchBrief
+	(*GetBranchBriefByIDRequest)(nil),      // 4: company.GetBranchBriefByIDRequest
+	(*GetBranchBriefByIDResponse)(nil),     // 5: company.GetBranchBriefByIDResponse
+	(*UpdateCompanyStatsByIDRequest)(nil),  // 6: company.UpdateCompanyStatsByIDRequest
+	(*UpdateCompanyStatsByIDResponse)(nil), // 7: company.UpdateCompanyStatsByIDResponse
+	(*UpdateBranchStatsByIDRequest)(nil),   // 8: company.UpdateBranchStatsByIDRequest
+	(*UpdateBranchStatsByIDResponse)(nil),  // 9: company.UpdateBranchStatsByIDResponse
 }
 var file_proto_company_company_proto_depIdxs = []int32{
 	0, // 0: company.GetCompanyBriefByIDResponse.companyBrief:type_name -> company.CompanyBrief
 	3, // 1: company.GetBranchBriefByIDResponse.branchBrief:type_name -> company.BranchBrief
 	1, // 2: company.CompanyService.GetCompanyBriefByID:input_type -> company.GetCompanyBriefByIDRequest
 	4, // 3: company.CompanyService.GetBranchBriefByID:input_type -> company.GetBranchBriefByIDRequest
-	2, // 4: company.CompanyService.GetCompanyBriefByID:output_type -> company.GetCompanyBriefByIDResponse
-	5, // 5: company.CompanyService.GetBranchBriefByID:output_type -> company.GetBranchBriefByIDResponse
-	4, // [4:6] is the sub-list for method output_type
-	2, // [2:4] is the sub-list for method input_type
+	6, // 4: company.CompanyService.UpdateCompanyStatsByID:input_type -> company.UpdateCompanyStatsByIDRequest
+	8, // 5: company.CompanyService.UpdateBranchStatsByID:input_type -> company.UpdateBranchStatsByIDRequest
+	2, // 6: company.CompanyService.GetCompanyBriefByID:output_type -> company.GetCompanyBriefByIDResponse
+	5, // 7: company.CompanyService.GetBranchBriefByID:output_type -> company.GetBranchBriefByIDResponse
+	7, // 8: company.CompanyService.UpdateCompanyStatsByID:output_type -> company.UpdateCompanyStatsByIDResponse
+	9, // 9: company.CompanyService.UpdateBranchStatsByID:output_type -> company.UpdateBranchStatsByIDResponse
+	6, // [6:10] is the sub-list for method output_type
+	2, // [2:6] is the sub-list for method input_type
 	2, // [2:2] is the sub-list for extension type_name
 	2, // [2:2] is the sub-list for extension extendee
 	0, // [0:2] is the sub-list for field type_name
@@ -540,6 +783,54 @@ func file_proto_company_company_proto_init() {
 				return nil
 			}
 		}
+		file_proto_company_company_proto_msgTypes[6].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*UpdateCompanyStatsByIDRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_proto_company_company_proto_msgTypes[7].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*UpdateCompanyStatsByIDResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_proto_company_company_proto_msgTypes[8].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*UpdateBranchStatsByIDRequest); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
+		file_proto_company_company_proto_msgTypes[9].Exporter = func(v interface{}, i int) interface{} {
+			switch v := v.(*UpdateBranchStatsByIDResponse); i {
+			case 0:
+				return &v.state
+			case 1:
+				return &v.sizeCache
+			case 2:
+				return &v.unknownFields
+			default:
+				return nil
+			}
+		}
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
@@ -547,7 +838,7 @@ func file_proto_company_company_proto_init() {
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
 			RawDescriptor: file_proto_company_company_proto_rawDesc,
 			NumEnums:      0,
-			NumMessages:   6,
+			NumMessages:   10,
 			NumExtensions: 0,
 			NumServices:   1,
 		},
@@ -575,6 +866,8 @@ const _ = grpc.SupportPackageIsVersion6
 type CompanyServiceClient interface {
 	GetCompanyBriefByID(ctx context.Context, in *GetCompanyBriefByIDRequest, opts ...grpc.CallOption) (*GetCompanyBriefByIDResponse, error)
 	GetBranchBriefByID(ctx context.Context, in *GetBranchBriefByIDRequest, opts ...grpc.CallOption) (*GetBranchBriefByIDResponse, error)
+	UpdateCompanyStatsByID(ctx context.Context, in *UpdateCompanyStatsByIDRequest, opts ...grpc.CallOption) (*UpdateCompanyStatsByIDResponse, error)
+	UpdateBranchStatsByID(ctx context.Context, in *UpdateBranchStatsByIDRequest, opts ...grpc.CallOption) (*UpdateBranchStatsByIDResponse, error)
 }
 
 type companyServiceClient struct {
@@ -603,10 +896,30 @@ func (c *companyServiceClient) GetBranchBriefByID(ctx context.Context, in *GetBr
 	return out, nil
 }
 
+func (c *companyServiceClient) UpdateCompanyStatsByID(ctx context.Context, in *UpdateCompanyStatsByIDRequest, opts ...grpc.CallOption) (*UpdateCompanyStatsByIDResponse, error) {
+	out := new(UpdateCompanyStatsByIDResponse)
+	err := c.cc.Invoke(ctx, "/company.CompanyService/UpdateCompanyStatsByID", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
+func (c *companyServiceClient) UpdateBranchStatsByID(ctx context.Context, in *UpdateBranchStatsByIDRequest, opts ...grpc.CallOption) (*UpdateBranchStatsByIDResponse, error) {
+	out := new(UpdateBranchStatsByIDResponse)
+	err := c.cc.Invoke(ctx, "/company.CompanyService/UpdateBranchStatsByID", in, out, opts...)
+	if err != nil {
+		return nil, err
+	}
+	return out, nil
+}
+
 // CompanyServiceServer is the server API for CompanyService service.
 type CompanyServiceServer interface {
 	GetCompanyBriefByID(context.Context, *GetCompanyBriefByIDRequest) (*GetCompanyBriefByIDResponse, error)
 	GetBranchBriefByID(context.Context, *GetBranchBriefByIDRequest) (*GetBranchBriefByIDResponse, error)
+	UpdateCompanyStatsByID(context.Context, *UpdateCompanyStatsByIDRequest) (*UpdateCompanyStatsByIDResponse, error)
+	UpdateBranchStatsByID(context.Context, *UpdateBranchStatsByIDRequest) (*UpdateBranchStatsByIDResponse, error)
 }
 
 // UnimplementedCompanyServiceServer can be embedded to have forward compatible implementations.
@@ -618,6 +931,12 @@ func (*UnimplementedCompanyServiceServer) GetCompanyBriefByID(context.Context, *
 }
 func (*UnimplementedCompanyServiceServer) GetBranchBriefByID(context.Context, *GetBranchBriefByIDRequest) (*GetBranchBriefByIDResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method GetBranchBriefByID not implemented")
+}
+func (*UnimplementedCompanyServiceServer) UpdateCompanyStatsByID(context.Context, *UpdateCompanyStatsByIDRequest) (*UpdateCompanyStatsByIDResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method UpdateCompanyStatsByID not implemented")
+}
+func (*UnimplementedCompanyServiceServer) UpdateBranchStatsByID(context.Context, *UpdateBranchStatsByIDRequest) (*UpdateBranchStatsByIDResponse, error) {
+	return nil, status.Errorf(codes.Unimplemented, "method UpdateBranchStatsByID not implemented")
 }
 
 func RegisterCompanyServiceServer(s *grpc.Server, srv CompanyServiceServer) {
@@ -660,6 +979,42 @@ func _CompanyService_GetBranchBriefByID_Handler(srv interface{}, ctx context.Con
 	return interceptor(ctx, in, info, handler)
 }
 
+func _CompanyService_UpdateCompanyStatsByID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(UpdateCompanyStatsByIDRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(CompanyServiceServer).UpdateCompanyStatsByID(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/company.CompanyService/UpdateCompanyStatsByID",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(CompanyServiceServer).UpdateCompanyStatsByID(ctx, req.(*UpdateCompanyStatsByIDRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
+func _CompanyService_UpdateBranchStatsByID_Handler(srv interface{}, ctx context.Context, dec func(interface{}) error, interceptor grpc.UnaryServerInterceptor) (interface{}, error) {
+	in := new(UpdateBranchStatsByIDRequest)
+	if err := dec(in); err != nil {
+		return nil, err
+	}
+	if interceptor == nil {
+		return srv.(CompanyServiceServer).UpdateBranchStatsByID(ctx, in)
+	}
+	info := &grpc.UnaryServerInfo{
+		Server:     srv,
+		FullMethod: "/company.CompanyService/UpdateBranchStatsByID",
+	}
+	handler := func(ctx context.Context, req interface{}) (interface{}, error) {
+		return srv.(CompanyServiceServer).UpdateBranchStatsByID(ctx, req.(*UpdateBranchStatsByIDRequest))
+	}
+	return interceptor(ctx, in, info, handler)
+}
+
 var _CompanyService_serviceDesc = grpc.ServiceDesc{
 	ServiceName: "company.CompanyService",
 	HandlerType: (*CompanyServiceServer)(nil),
@@ -671,6 +1026,14 @@ var _CompanyService_serviceDesc = grpc.ServiceDesc{
 		{
 			MethodName: "GetBranchBriefByID",
 			Handler:    _CompanyService_GetBranchBriefByID_Handler,
+		},
+		{
+			MethodName: "UpdateCompanyStatsByID",
+			Handler:    _CompanyService_UpdateCompanyStatsByID_Handler,
+		},
+		{
+			MethodName: "UpdateBranchStatsByID",
+			Handler:    _CompanyService_UpdateBranchStatsByID_Handler,
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
