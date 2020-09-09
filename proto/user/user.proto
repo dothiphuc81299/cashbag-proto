@@ -19,6 +19,18 @@ message GetUserBriefByIDResponse {
     UserBrief userBrief = 1;
 }
 
+message UpdateUserStatsByIDRequest {
+    string id = 1;
+    float totalTransaction = 2;               
+    float totalRevenue = 3;
+}
+
+message UpdateUserStatsByIDResponse {
+   
+}
+
+
 service UserService {
     rpc GetUserBriefByID(GetUserBriefByIDRequest) returns (GetUserBriefByIDResponse){};
+    rpc UpdateUserStatsByID(UpdateUserStatsByIDRequest) returns (UpdateUserStatsByIDResponse){};
 }
