@@ -22,7 +22,7 @@ message GetUserBriefByIDResponse {
 message UpdateUserStatsByIDRequest {
     string id = 1;
     float totalTransaction = 2;               
-    float totalRevenue = 3;
+    float totalCommission = 3;
 }
 
 message UpdateUserStatsByIDResponse {
