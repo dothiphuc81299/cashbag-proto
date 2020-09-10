@@ -8,9 +8,9 @@ option go_package="/models/transaction;transactionpb";
 
 message TransactionDetail {
     string id = 1;
-    string company = 2;
-    string branch = 3;
-    string user = 4;
+    string companyID = 2;
+    string branchID = 3;
+    string userID = 4;
     double amount = 5;
     double commission =6;
     double companyCashbackPercent = 7;
