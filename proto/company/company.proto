@@ -13,7 +13,7 @@ message CompanyBrief {
 }
 
 message GetCompanyBriefByIDRequest {
-    string id = 1 ;
+    string companyID = 1 ;
 }
 
 message GetCompanyBriefByIDResponse {
@@ -28,7 +28,7 @@ message BranchBrief {
 }
 
 message GetBranchBriefByIDRequest {
-    string id = 1 ;
+    string branchID = 1 ;
 }
 
 message GetBranchBriefByIDResponse {

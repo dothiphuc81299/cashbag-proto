@@ -18,19 +18,19 @@ message TransactionDetail {
 }
 
 message GetTransactionDetailByUserIDRequest {
-    string id = 1 ;
+    string userID = 1 ;
 }
 
 message GetTransactionDetailByUserIDResponse {
-    TransactionDetail transactionDetail = 1;
+   repeated TransactionDetail transactionDetail = 1;
 }
 
 message GetTransactionDetailByCompanyIDRequest {
-    string id = 1 ;
+    string companyID = 1 ;
 }
 
 message GetTransactionDetailByCompanyIDResponse {
-    TransactionDetail transactionDetail = 1;
+    repeated TransactionDetail transactionDetail = 1;
 }
 
 service TransactionService {
