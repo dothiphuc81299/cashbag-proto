@@ -12,7 +12,7 @@ message UserBrief {
 }
 
 message GetUserBriefByIDRequest {
-    string id = 1 ;
+    string userID = 1 ;
 }
 
 message GetUserBriefByIDResponse {
