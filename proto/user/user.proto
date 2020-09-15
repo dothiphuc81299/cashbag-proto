@@ -29,7 +29,6 @@ message UpdateUserStatsByIDResponse {
    
 }
 
-
 service UserService {
     rpc GetUserBriefByID(GetUserBriefByIDRequest) returns (GetUserBriefByIDResponse){};
     rpc UpdateUserStatsByID(UpdateUserStatsByIDRequest) returns (UpdateUserStatsByIDResponse){};
